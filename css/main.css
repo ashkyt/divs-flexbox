@@ -118,6 +118,13 @@ main {
   width: 100%;
 }
 
+header h1 {
+  font-weight: 400;
+}
+main h2 {
+  font-weight: 400;
+}
+
 header {
   justify-content: flex-start;
   font-family: "Playfair Display", serif;
@@ -134,6 +141,7 @@ header {
 .wrapper {
   display: flex;
   justify-content: space-around;
+  flex-flow: column wrap;
 }
 
 .div-1,
@@ -154,9 +162,8 @@ header {
 
 .div-1,
 .div-2 {
-  border-right: 2px solid #fcf7ff;
+  border-bottom: 2px solid #fcf7ff;
 }
-
 footer {
   height: auto;
   margin-top: 50px;
@@ -167,6 +174,28 @@ footer {
   padding: 20px;
 }
 
+@media only screen and (min-width: 1080px) {
+  .div-1,
+  .div-2 {
+    border-right: 2px solid #fcf7ff;
+    border-bottom: none;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+  }
+  body {
+    background-color: #f55d3e;
+    height: 100%;
+  }
+  .div-1,
+  .div-2,
+  .div-3 {
+    background-color: #f55d3e;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
