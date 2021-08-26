@@ -96,49 +96,75 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #277650;
   height: 100%;
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
   background-color: #277650;
+  color: #fcf7ff;
 }
+
+header,
+footer,
 main {
-  border: 2px solid green;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  justify-content: flex-start;
+  font-family: "Playfair Display", serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-around;
-  font-weight: 700;
 }
 
 .div-1,
 .div-2,
 .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
   line-height: 1.5em;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 400;
   background-color: #277650;
-  height: 300px;
+  height: auto;
   width: 30%;
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  font-family: "Raleway", sans-serif;
+  align-items: center;
   text-align: center;
   padding: 20px;
 }
 
 .div-1,
 .div-2 {
-  border-right: 3px solid white;
+  border-right: 2px solid #fcf7ff;
+}
+
+footer {
+  height: auto;
+  margin-top: 50px;
+  justify-content: flex-start;
+}
+.contact-icons {
+  height: 30px;
+  padding: 20px;
 }
 
 /* ==========================================================================
